@@ -4,55 +4,57 @@ This is an application for admin to book a mining vehicle, then an Invoice will 
 [Entity Relationship Diagram (ERD)](https://drive.google.com/file/d/1pTbhSm3zgdZQbeaNU66r5jUMd88xOgSJ/view?usp=sharing) for this Application
 
 ## Technologies Used
-Framework   : Laravel 10
-Composer    : 2.2.4
-PHP         : 8.2.0
-Node        : v16.13.2
-npm         : 8.1.2
-XAMPP       : v3.3.0
-MySQL       : 10.4.27-MariaDB
-Apache      : 2.4.54 (Win64)
+| Name       | Version        |
+| ---------- | -------------- |
+|Framework   | Laravel 10     |
+|Composer    | 2.2.4          |
+|PHP         | 8.2.0          |
+|Node        | v16.13.2       |
+|npm         | 8.1.2          |
+|XAMPP       | v3.3.0         |
+|MySQL       | 10.4.27-MariaDB|
+|Apache      | 2.4.54 (Win64) |
 
 ### php.ini file configuration (for laravel-excel)
-PhpSpreadsheet: `^1.21
-PHP extension php_zip enabled
-PHP extension php_xml enabled
-PHP extension php_gd2 enabled
-PHP extension php_iconv enabled
-PHP extension php_simplexml enabled
-PHP extension php_xmlreader enabled
-PHP extension php_zlib enabled
+- [x] PhpSpreadsheet: `^1.21
+- [x] PHP extension php_zip enabled
+- [x] PHP extension php_xml enabled
+- [x] PHP extension php_gd2 enabled
+- [x] PHP extension php_iconv enabled
+- [x] PHP extension php_simplexml enabled
+- [x] PHP extension php_xmlreader enabled
+- [x] PHP extension php_zlib enabled
 
 ## Installation
-1. Run XAMPP Control Panel (Apache, MySQL)
+### 1. Run XAMPP Control Panel (Apache, MySQL)
 
-2. Open your terminal in htdocs folder inside xampp folder, then clone this repository 
+### 2. Open your terminal in htdocs folder inside xampp folder, then clone this repository 
 ```bash
 git clone https://github.com/jevoncloanda/BookVehicleApp.git
 ```
-3. cd into the project
+### 3. cd into the project
 ```bash
 cd BookVehicleApp
 ```
-4. Install Composer dependencies
+### 4. Install Composer dependencies
 ```bash
 composer install
 ```
-5. Install npm dependencies
+### 5. Install npm dependencies
 ```bash
 npm install && npm run build
 ```
-6. Create a copy of your .env
+### 6. Create a copy of your .env
 ```bash
 cp .env.example .env
 ```
-7. Generate app encryption key
+### 7. Generate app encryption key
 ```bash
 php artisan key:generate
 ```
-8. Create an empty database in MySQL
-9. Configure .env file and connect Laravel to the database
-10. Migrate and seed the database
+### 8. Create an empty database in MySQL
+### 9. Configure .env file and connect Laravel to the database
+### 10. Migrate and seed the database
 ```bash
 php artisan migrate:fresh --seed
 ```
@@ -65,37 +67,37 @@ php artisan serve
 ## 2. Login to the application
 ### For Admin
 There is only 1 user for admin:
-> Name      : Admin
-> Role      : Admin
-> Email     : admin@gmail.com
-> Password  : admin1234
+> name      : Admin ,
+> role      : Admin ,
+> email     : admin@gmail.com ,
+> password  : admin1234 ,
 
 ### For Approver
 There are 5 users for approver
-> Name      : Andi
-> Role      : Approver
-> Email     : andi@gmail.com
-> Password  : andi1234
+> name      : Andi ,
+> role      : Approver ,
+> email     : andi@gmail.com ,
+> password  : andi1234 ,
 
-> Name      : Budi
-> Role      : Approver
-> Email     : budi@gmail.com
-> Password  : budi1234
+> name      : Budi ,
+> role      : Approver ,
+> email     : budi@gmail.com ,
+> password  : budi1234 ,
 
-> Name      : Chaki
-> Role      : Approver
-> Email     : chaki@gmail.com
-> Password  : chaki1234
+> name      : Chaki ,
+> role      : Approver ,
+> email     : chaki@gmail.com ,
+> password  : chaki1234 ,
 
-> Name      : Dodit
-> Role      : Approver
-> Email     : dodit@gmail.com
-> Password  : dodit1234
+> name      : Dodit ,
+> role      : Approver ,
+> email     : dodit@gmail.com ,
+> password  : dodit1234 ,
 
-> Name      : Elang
-> Role      : Approver
-> Email     : elang@gmail.com
-> Password  : elang1234
+> name      : Elang ,
+> role      : Approver ,
+> email     : elang@gmail.com ,
+> password  : elang1234 ,
 
 ## 3. Dashboard
 ### For Admin
