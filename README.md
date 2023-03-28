@@ -44,9 +44,9 @@ composer install
 ```bash
 npm install && npm run build
 ```
-### 6. Create a copy of your .env
+### 6. Create a copy of your .env from .env.example
 ```bash
-cp .env.example .env
+copy .env.example .env
 ```
 ### 7. Generate app encryption key
 ```bash
